@@ -31,11 +31,11 @@ if input_file is not None:
     input_data = pd.read_csv(input_file)
 #Read data
 #SCADA data
-    scada_df = pd.read_csv('C:/Users/purva/OneDrive/Desktop/Project/Breakdown SCADA/scada_data.csv')
+    scada_df = pd.read_csv('scada_data.csv')
     scada_df['DateTime'] = pd.to_datetime(scada_df['DateTime'])
 # scada_df.set_index('DateTime', inplace=True)
 
-    fault_df = pd.read_csv('C:/Users/purva/OneDrive/Desktop/Project/Breakdown SCADA/fault_data.csv')
+    fault_df = pd.read_csv('fault_data.csv')
     fault_df['DateTime'] = pd.to_datetime(fault_df['DateTime'])
 # fault_df.set_index('DateTime', inplace=True)
 
